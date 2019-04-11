@@ -110,6 +110,7 @@ function downloadSydneyTrains () {
 
 	});
 }
-downloadSydneyTrains();
-
+var requestLoop = setInterval(function(){
+	downloadSydneyTrains();
+},60000);
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"node realtime.js\" \"node timetable.js\"  \"node myTrains.js\""
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   "homepage": "https://github.com/ankitverma82/nswtransport#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
     "lodash": "^4.17.11",
     "protobufjs": "^6.8.8",
     "sqlite3": "^4.0.6"

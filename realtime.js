@@ -128,7 +128,6 @@ function processFile(db,data,callback) {
 
 		let header = object["header"];
 		let trips = object["entity"];
-		console.log(_.get(trips[66],"tripUpdate.stopTimeUpdate"));
 
 		for (const key_trip in trips) {
 			var trip = trips[key_trip];
